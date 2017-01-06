@@ -19,6 +19,8 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    self.label.underlineMatches = YES;
+    
     [self.searchField bind:NSValueBinding
                 toObject:self.label
              withKeyPath:@"searchString"

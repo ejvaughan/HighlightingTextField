@@ -8,6 +8,23 @@
 
 #import "EJVHighlightingTextField.h"
 
+@interface NSColor (HighlightingTextFieldAdditions)
+
+- (NSColor *)darkened;
+
+@end
+
+@implementation NSColor (HighlightingTextFieldAdditions)
+
+- (NSColor *)darkened
+{
+    CGFloat h, s, b, a;
+    [self getHue:&h saturation:&s brightness:&b alpha:&a];
+    return [NSColor colorWithHue:h saturation:s brightness:b * 0.75 alpha:a];
+}
+
+@end
+
 @interface EJVHighlightingTextField ()
 
 - (void)updateHighlights;
@@ -68,7 +85,7 @@
 
 - (void)commonInit
 {
-    _matchesHighlightColor = [NSColor yellowColor];
+    _matchesHighlightColor = [[NSColor yellowColor] colorWithAlphaComponent:0.8];
     _matchesHighlightColorForHighlightedBackground = [NSColor colorWithWhite:1.0 alpha:0.5];
 }
 
@@ -87,6 +104,12 @@
 - (void)setMatchesHighlightColorForHighlightedBackground:(NSColor *)color
 {
     _matchesHighlightColorForHighlightedBackground = color;
+    [self updateHighlights];
+}
+
+- (void)setUnderlineMatches:(BOOL)underlineMatches
+{
+    _underlineMatches = underlineMatches;
     [self updateHighlights];
 }
 
@@ -140,6 +163,11 @@
     // Remove old highlights
     [updated removeAttribute:NSBackgroundColorAttributeName range:searchRange];
     
+    if (self.underlineMatches) {
+        [updated removeAttribute:NSUnderlineStyleAttributeName range:searchRange];
+        [updated removeAttribute:NSUnderlineColorAttributeName range:searchRange];
+    }
+    
     [updated addAttribute:NSForegroundColorAttributeName value:(self.cell.backgroundStyle == NSBackgroundStyleDark) ? [NSColor whiteColor] : self.textColor range:searchRange];
     
     if ([self.searchString length] == 0) {
@@ -153,10 +181,17 @@
      ^(NSString * _Nullable substring, NSRange substringRange, NSRange enclosingRange, BOOL * _Nonnull stop) {
          NSRange foundRange = { 0 };
          if (searchRange.location < [updated length] && (foundRange = [updated.string rangeOfString:substring options:NSCaseInsensitiveSearch | NSDiacriticInsensitiveSearch range:searchRange]).location != NSNotFound) {
+             NSColor *effectiveHighlightColor = (self.cell.backgroundStyle == NSBackgroundStyleDark) ? self.matchesHighlightColorForHighlightedBackground : self.matchesHighlightColor;
+             
              [updated addAttribute:NSBackgroundColorAttributeName
-                             value:
-              (self.cell.backgroundStyle == NSBackgroundStyleDark) ? self.matchesHighlightColorForHighlightedBackground : self.matchesHighlightColor
+                             value:effectiveHighlightColor
                              range:foundRange];
+             
+             if (self.underlineMatches) {
+                 NSColor *computedUnderlineColor = [[effectiveHighlightColor colorWithAlphaComponent:1.0] darkened];
+                 [updated addAttribute:NSUnderlineStyleAttributeName value:@(NSUnderlineStyleSingle) range:foundRange];
+                 [updated addAttribute:NSUnderlineColorAttributeName value:computedUnderlineColor range:foundRange];
+             }
              
              searchRange.location = NSMaxRange(foundRange);
              searchRange.length = [updated length] - searchRange.location;

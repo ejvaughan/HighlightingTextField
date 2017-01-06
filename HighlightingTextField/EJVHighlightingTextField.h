@@ -21,6 +21,9 @@ NS_ASSUME_NONNULL_BEGIN
 // Applied when the text field's cell has a background style of NSBackgroundStyleDark. Defaults to whitish
 @property (nonatomic, strong) NSColor *matchesHighlightColorForHighlightedBackground;
 
+// Default value: NO
+@property (nonatomic) BOOL underlineMatches;
+
 @end
 
 NS_ASSUME_NONNULL_END
