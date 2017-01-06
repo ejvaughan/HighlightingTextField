@@ -4,7 +4,7 @@ An NSTextField subclass that supports highlighting the portion of its contents t
 
 ## Example
 
-[demo.gif]
+![](demo.gif)
 
 ## Usage
 
