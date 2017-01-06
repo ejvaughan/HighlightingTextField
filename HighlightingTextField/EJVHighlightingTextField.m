@@ -175,4 +175,9 @@
     self.attributedStringValue = self.attributedStringValue;
 }
 
+- (BOOL)isEditable
+{
+    return NO;
+}
+
 @end
