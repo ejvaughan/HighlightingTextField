@@ -11,6 +11,7 @@
 		AAAEEDC41E1F6996004ABFAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAEEDC31E1F6996004ABFAE /* main.m */; };
 		AAAEEDC61E1F6996004ABFAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAAEEDC51E1F6996004ABFAE /* Assets.xcassets */; };
 		AAAEEDC91E1F6996004ABFAE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAAEEDC71E1F6996004ABFAE /* MainMenu.xib */; };
+		AAAEEDD21E1F6A27004ABFAE /* EJVHighlightingTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAEEDD11E1F6A27004ABFAE /* EJVHighlightingTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,8 @@
 		AAAEEDC51E1F6996004ABFAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAAEEDC81E1F6996004ABFAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		AAAEEDCA1E1F6996004ABFAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAAEEDD01E1F6A27004ABFAE /* EJVHighlightingTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJVHighlightingTextField.h; sourceTree = "<group>"; };
+		AAAEEDD11E1F6A27004ABFAE /* EJVHighlightingTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJVHighlightingTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,12 +56,9 @@
 		AAAEEDBE1E1F6996004ABFAE /* HighlightingTextField */ = {
 			isa = PBXGroup;
 			children = (
-				AAAEEDBF1E1F6996004ABFAE /* AppDelegate.h */,
-				AAAEEDC01E1F6996004ABFAE /* AppDelegate.m */,
-				AAAEEDC51E1F6996004ABFAE /* Assets.xcassets */,
-				AAAEEDC71E1F6996004ABFAE /* MainMenu.xib */,
-				AAAEEDCA1E1F6996004ABFAE /* Info.plist */,
-				AAAEEDC21E1F6996004ABFAE /* Supporting Files */,
+				AAAEEDD01E1F6A27004ABFAE /* EJVHighlightingTextField.h */,
+				AAAEEDD11E1F6A27004ABFAE /* EJVHighlightingTextField.m */,
+				AAAEEDD31E1F6AE2004ABFAE /* Demo */,
 			);
 			path = HighlightingTextField;
 			sourceTree = "<group>";
@@ -69,6 +69,19 @@
 				AAAEEDC31E1F6996004ABFAE /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AAAEEDD31E1F6AE2004ABFAE /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				AAAEEDBF1E1F6996004ABFAE /* AppDelegate.h */,
+				AAAEEDC01E1F6996004ABFAE /* AppDelegate.m */,
+				AAAEEDC51E1F6996004ABFAE /* Assets.xcassets */,
+				AAAEEDC71E1F6996004ABFAE /* MainMenu.xib */,
+				AAAEEDCA1E1F6996004ABFAE /* Info.plist */,
+				AAAEEDC21E1F6996004ABFAE /* Supporting Files */,
+			);
+			name = Demo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAAEEDD21E1F6A27004ABFAE /* EJVHighlightingTextField.m in Sources */,
 				AAAEEDC41E1F6996004ABFAE /* main.m in Sources */,
 				AAAEEDC11E1F6996004ABFAE /* AppDelegate.m in Sources */,
 			);
