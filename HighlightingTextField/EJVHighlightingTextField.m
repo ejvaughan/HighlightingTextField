@@ -20,7 +20,7 @@
 {
     CGFloat h, s, b, a;
     [[self colorUsingColorSpaceName:NSCalibratedRGBColorSpace] getHue:&h saturation:&s brightness:&b alpha:&a];
-    return [NSColor colorWithHue:h saturation:s brightness:b * 0.75 alpha:a];
+    return [NSColor colorWithHue:h saturation:s brightness:b * 0.85 alpha:a];
 }
 
 @end
