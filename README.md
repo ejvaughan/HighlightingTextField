@@ -8,7 +8,7 @@ An NSTextField subclass that supports highlighting the portion of its contents t
 
 ## Usage
 
-`EJVHighlightingTextField` has the following three properties:
+`EJVHighlightingTextField` has the following properties:
 
     // Key-value observable, bindable
     @property (nullable, nonatomic, strong) NSString *searchString;
