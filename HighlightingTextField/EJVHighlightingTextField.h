@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 // Defaults to yellow
 @property (nonatomic, strong) NSColor *matchesHighlightColor;
 
-// Defaults to whitish
+// Applied when the text field's cell has a background style of NSBackgroundStyleDark. Defaults to whitish
 @property (nonatomic, strong) NSColor *matchesHighlightColorForHighlightedBackground;
 
 @end

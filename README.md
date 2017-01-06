@@ -16,7 +16,7 @@ An NSTextField subclass that supports highlighting the portion of its contents t
     // Defaults to yellow
     @property (nonatomic, strong) NSColor *matchesHighlightColor;
 
-    // Defaults to whitish
+    // Applied when the text field's cell has a background style of NSBackgroundStyleDark. Defaults to whitish
     @property (nonatomic, strong) NSColor *matchesHighlightColorForHighlightedBackground;
 
 The `searchString` property determines the text to look for and highlight in the text field. It can be bound to, for example, another text field's content:
