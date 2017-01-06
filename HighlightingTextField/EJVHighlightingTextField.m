@@ -19,7 +19,7 @@
 - (NSColor *)darkened
 {
     CGFloat h, s, b, a;
-    [self getHue:&h saturation:&s brightness:&b alpha:&a];
+    [[self colorUsingColorSpaceName:NSCalibratedRGBColorSpace] getHue:&h saturation:&s brightness:&b alpha:&a];
     return [NSColor colorWithHue:h saturation:s brightness:b * 0.75 alpha:a];
 }
 
