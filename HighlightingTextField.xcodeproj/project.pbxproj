@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AAAEEDC11E1F6996004ABFAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAEEDC01E1F6996004ABFAE /* AppDelegate.m */; };
+		AAAEEDC41E1F6996004ABFAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAEEDC31E1F6996004ABFAE /* main.m */; };
+		AAAEEDC61E1F6996004ABFAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAAEEDC51E1F6996004ABFAE /* Assets.xcassets */; };
+		AAAEEDC91E1F6996004ABFAE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAAEEDC71E1F6996004ABFAE /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AAAEEDBC1E1F6996004ABFAE /* HighlightingTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HighlightingTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAAEEDBF1E1F6996004ABFAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AAAEEDC01E1F6996004ABFAE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AAAEEDC31E1F6996004ABFAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AAAEEDC51E1F6996004ABFAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AAAEEDC81E1F6996004ABFAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		AAAEEDCA1E1F6996004ABFAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAAEEDB91E1F6996004ABFAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAAEEDB31E1F6996004ABFAE = {
+			isa = PBXGroup;
+			children = (
+				AAAEEDBE1E1F6996004ABFAE /* HighlightingTextField */,
+				AAAEEDBD1E1F6996004ABFAE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAAEEDBD1E1F6996004ABFAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAAEEDBC1E1F6996004ABFAE /* HighlightingTextField.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAAEEDBE1E1F6996004ABFAE /* HighlightingTextField */ = {
+			isa = PBXGroup;
+			children = (
+				AAAEEDBF1E1F6996004ABFAE /* AppDelegate.h */,
+				AAAEEDC01E1F6996004ABFAE /* AppDelegate.m */,
+				AAAEEDC51E1F6996004ABFAE /* Assets.xcassets */,
+				AAAEEDC71E1F6996004ABFAE /* MainMenu.xib */,
+				AAAEEDCA1E1F6996004ABFAE /* Info.plist */,
+				AAAEEDC21E1F6996004ABFAE /* Supporting Files */,
+			);
+			path = HighlightingTextField;
+			sourceTree = "<group>";
+		};
+		AAAEEDC21E1F6996004ABFAE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAAEEDC31E1F6996004ABFAE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAAEEDBB1E1F6996004ABFAE /* HighlightingTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAAEEDCD1E1F6996004ABFAE /* Build configuration list for PBXNativeTarget "HighlightingTextField" */;
+			buildPhases = (
+				AAAEEDB81E1F6996004ABFAE /* Sources */,
+				AAAEEDB91E1F6996004ABFAE /* Frameworks */,
+				AAAEEDBA1E1F6996004ABFAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HighlightingTextField;
+			productName = HighlightingTextField;
+			productReference = AAAEEDBC1E1F6996004ABFAE /* HighlightingTextField.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAAEEDB41E1F6996004ABFAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Ethan James Vaughan";
+				TargetAttributes = {
+					AAAEEDBB1E1F6996004ABFAE = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = LDTRPGZ338;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AAAEEDB71E1F6996004ABFAE /* Build configuration list for PBXProject "HighlightingTextField" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAAEEDB31E1F6996004ABFAE;
+			productRefGroup = AAAEEDBD1E1F6996004ABFAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAAEEDBB1E1F6996004ABFAE /* HighlightingTextField */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAAEEDBA1E1F6996004ABFAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAAEEDC61E1F6996004ABFAE /* Assets.xcassets in Resources */,
+				AAAEEDC91E1F6996004ABFAE /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAAEEDB81E1F6996004ABFAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAAEEDC41E1F6996004ABFAE /* main.m in Sources */,
+				AAAEEDC11E1F6996004ABFAE /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AAAEEDC71E1F6996004ABFAE /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAAEEDC81E1F6996004ABFAE /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAAEEDCB1E1F6996004ABFAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AAAEEDCC1E1F6996004ABFAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AAAEEDCE1E1F6996004ABFAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LDTRPGZ338;
+				INFOPLIST_FILE = HighlightingTextField/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ejv.HighlightingTextField;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AAAEEDCF1E1F6996004ABFAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LDTRPGZ338;
+				INFOPLIST_FILE = HighlightingTextField/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ejv.HighlightingTextField;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAAEEDB71E1F6996004ABFAE /* Build configuration list for PBXProject "HighlightingTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAAEEDCB1E1F6996004ABFAE /* Debug */,
+				AAAEEDCC1E1F6996004ABFAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAAEEDCD1E1F6996004ABFAE /* Build configuration list for PBXNativeTarget "HighlightingTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAAEEDCE1E1F6996004ABFAE /* Debug */,
+				AAAEEDCF1E1F6996004ABFAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAAEEDB41E1F6996004ABFAE /* Project object */;
+}
