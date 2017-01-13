@@ -86,7 +86,7 @@
 - (void)commonInit
 {
     _matchesHighlightColor = [[NSColor yellowColor] colorWithAlphaComponent:0.8];
-    _matchesHighlightColorForHighlightedBackground = [NSColor colorWithWhite:1.0 alpha:0.5];
+    _matchesHighlightColorForHighlightedBackground = _matchesHighlightColor;
 }
 
 - (void)setSearchString:(NSString *)searchString
@@ -167,8 +167,6 @@
         [updated removeAttribute:NSUnderlineStyleAttributeName range:searchRange];
         [updated removeAttribute:NSUnderlineColorAttributeName range:searchRange];
     }
-    
-    [updated addAttribute:NSForegroundColorAttributeName value:(self.cell.backgroundStyle == NSBackgroundStyleDark) ? [NSColor whiteColor] : self.textColor range:searchRange];
     
     if ([self.searchString length] == 0) {
         return updated;

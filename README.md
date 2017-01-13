@@ -16,7 +16,7 @@ An NSTextField subclass that supports highlighting the portion of its contents t
     // Defaults to yellow
     @property (nonatomic, strong) NSColor *matchesHighlightColor;
 
-    // Applied when the text field's cell has a background style of NSBackgroundStyleDark. Defaults to whitish
+    // Applied when the text field's cell has a background style of NSBackgroundStyleDark. Defaults to yellow
     @property (nonatomic, strong) NSColor *matchesHighlightColorForHighlightedBackground;
 
     // Default value: NO
